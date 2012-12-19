@@ -1,0 +1,78 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-picture-min.js"></script>
+  <link href='css/style.css' rel='stylesheet'/>
+  <script>
+    $(function(){
+        $('figure, picture').picture();
+    });
+  </script>
+</head>
+<body>
+
+<h1>Swipe</h1>
+
+<h2>Full width</h2>
+
+<div id='slider3' class='swipe'>
+  <ul>
+    <li style='display:block'><div>1</div></li>
+    <li style='display:none'><div>2</div></li>
+    <li style='display:none'><div>3</div></li>
+    <li style='display:none'><div>4</div></li>
+    <li style='display:none'><div>5</div></li>
+  </ul>
+</div>
+
+<a href='#' onclick='slider3.prev();return false;'>prev</a> 
+<a href='#' onclick='slider3.next();return false;'>next</a>
+<br><br>
+
+<h2>Arbitrary Elements</h2>
+
+<div id='slider4' class='swipe'>
+  <div>
+    <div style='display:block'>
+      <div>
+        <figure data-media="imgs/5.jpg" data-media250="imgs/4.jpg" data-media500="imgs/3.jpg" data-media1000="imgs/2.jpg" data-media1500="imgs/1.jpg" title="A Half Brained Idea">
+      </div>
+    </div>
+    <div style='display:none'>
+      <div>
+        <figure data-media="imgs/5.jpg" data-media250="imgs/4.jpg" data-media500="imgs/3.jpg" data-media1000="imgs/2.jpg" data-media1500="imgs/1.jpg" title="A Half Brained Idea">
+      </div>
+    </div>
+    <div style='display:none'>
+      <div>
+        <figure data-media="imgs/5.jpg" data-media250="imgs/4.jpg" data-media500="imgs/3.jpg" data-media1000="imgs/2.jpg" data-media1500="imgs/1.jpg" title="A Half Brained Idea">
+      </div>
+    </div>
+    <div style='display:none'>
+      <div>
+        <figure data-media="imgs/5.jpg" data-media250="imgs/4.jpg" data-media500="imgs/3.jpg" data-media1000="imgs/2.jpg" data-media1500="imgs/1.jpg" title="A Half Brained Idea">
+      </div>
+    </div>
+    <div style='display:none'>
+      <div>
+        <figure data-media="imgs/5.jpg" data-media250="imgs/4.jpg" data-media500="imgs/3.jpg" data-media1000="imgs/2.jpg" data-media1500="imgs/1.jpg" title="A Half Brained Idea">
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href='#' onclick='slider4.prev();return false;'>prev</a> 
+<a href='#' onclick='slider4.next();return false;'>next</a>
+<br><br>
+
+
+<script src='js/swipe.js'></script>
+<script>
+var slider3 = new Swipe(document.getElementById('slider3'));
+var slider4 = new Swipe(document.getElementById('slider4'));
+</script>
+
+</body> 
+</html> 
